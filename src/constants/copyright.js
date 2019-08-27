@@ -1,0 +1,1 @@
+export const COPYRIGHT = '© Antique Society is a registered charity.';

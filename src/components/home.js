@@ -7,7 +7,7 @@ import Footer from '@/components/footer';
 class Hello extends Component {
     render() {
         return (
-          <div class="antiques-wrapper">
+          <div className="antiques-wrapper">
             <Navbar />
             <HeroSection />
             <Content />
