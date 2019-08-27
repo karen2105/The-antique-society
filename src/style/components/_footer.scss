@@ -1,0 +1,45 @@
+.antiques-footer {
+  padding: 8% 8% 4%;
+  background: #1b1b1b;
+  position: relative;
+  z-index: 2;
+
+  .brand-name-footer {
+    font-family: 'PalatinoLT-Light', serif;
+    color: white;
+    font-size: 2.3rem;
+    line-height: 38px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+      line-height: 28px;
+    }
+
+    .small-copy {
+      font-size: 0.7em;
+      line-height: 20px;
+    }
+  }
+
+  .footer-contact-links {
+    margin: 5% 0;
+    font-family: 'PalatinoLT-Roman', serif;
+    font-size: 0.82rem;
+  }
+
+  .footer-copyright {
+    display: block;
+    color: #b1b1b1;
+    margin: 5% 0 5px;
+    font-family: 'AvenirLTStd-Book';
+    font-size: 0.75rem;
+  }
+
+  .footer-privacy-terms {
+    font-family: 'AvenirLTStd-Book';
+    color: #666666;
+    padding-right: 5px; 
+    font-size: 0.65rem;
+  }
+
+}

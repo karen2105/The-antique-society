@@ -1,0 +1,86 @@
+//Hero
+.antiques-hero-section {
+  height: 80vh;
+  min-height: 530px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 1%;
+  background: #95A2A8 url("hero-images/desktop_hero.jpg") no-repeat top center; 
+  background-attachment: fixed;
+  background-size: auto 95%;
+  overflow: hidden;
+  z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    background: #95A2A8 url("hero-images/mobile_hero.jpg") no-repeat top center; 
+    background-size: auto 95%;
+    font-size: 1.65rem;
+  }
+
+  .antiques-hero-content-wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+
+     @media screen and (min-width: 769px) {
+      width: 25%;
+      margin-left: 55%;
+      position: fixed;
+    }
+  }
+
+  .name-brand {
+    font-family: 'PalatinoLT-Light', serif;
+    color: white;
+    font-size: 3.6rem;
+    margin-top: 35%;
+    line-height: 53px;
+
+    @media screen and (max-width: 768px) {
+      width: 35%;
+      margin-top: calc(1% + 42px);
+      margin-left: 5%;
+      font-size: 2.3rem;
+      line-height: 38px;
+    }
+
+    .small-copy {
+      font-size: 0.7em;
+    }
+  }
+
+  .hero-text-wrapper {
+    hr {
+      margin: 6% 0;
+    }
+    h4 {
+      font-family: 'PalatinoLT-Light', serif;
+      font-size: 1.35em;
+    }
+  }
+}
+
+.furniture-detail-wrapper {
+  margin-top: auto;
+  margin-bottom: 20px;
+  text-align: center;
+
+  .furniture-detail {
+    margin-top: auto;
+    font-size: 12px;
+    font-family: 'AvenirLTStd-Book', serif;
+
+    &.year {
+      font-family: 'AvenirLTStd-Medium', serif;
+      color: white;
+
+      .slash {
+        white-space: pre;
+        font-family: 'Swiss721BT-Thin', serif;
+      }
+    }
+  }
+}

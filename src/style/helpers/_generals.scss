@@ -1,0 +1,65 @@
+$main-gold: #988468;
+
+@font-face {
+  font-family: 'Swiss721BT-Thin';
+  src: local('Swiss721BT-Thin'), url('./webfonts/2EA710_0_0.ttf') format('truetype');
+}
+  
+@font-face {
+  font-family: 'PalatinoLT-Light';
+  src: local('PalatinoLT-Light'), url('./webfonts/2EA710_1_0.ttf') format('truetype');
+} 
+  
+@font-face {
+  font-family: 'PalatinoLT-Roman';
+  src: local('PalatinoLT-Roman'), url('./webfonts/2EA710_2_0.ttf') format('truetype');
+}
+  
+@font-face {
+  font-family: 'AvenirLTStd-Heavy';
+  src: local('AvenirLTStd-Heavy'), url('./webfonts/2EA710_3_0.ttf') format('truetype');
+}
+  
+@font-face {
+  font-family: 'AvenirLTStd-Medium';
+  src: local('AvenirLTStd-Medium'), url('./webfonts/2EA710_4_0.ttf') format('truetype');
+}
+  
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  src: local('AvenirLTStd-Book'), url('./webfonts/2EA710_5_0.ttf') format('truetype');
+}
+
+html {
+  font-size: 16px;
+}
+
+hr {
+  width: 100px;
+  border-color: #dfe3e4;
+  margin-left: 0;
+}
+
+h1 {
+  font-family: 'PalatinoLT-Roman', serif;
+}
+
+h2 {
+  font-family: 'PalatinoLT-Roman', serif;
+}
+
+h3 {
+    font-family: 'PalatinoLT-Light', serif;
+}
+
+h5 {
+  font-family: 'AvenirLTStd-Heavy', serif;
+  text-transform: uppercase;
+  color: $main-gold;
+  font-size: 0.75rem;
+}
+
+sup {
+  font-size: 50%;
+  top: -0.7em;
+}

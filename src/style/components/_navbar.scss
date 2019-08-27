@@ -1,0 +1,94 @@
+//Navbar
+.brand {
+  font-family: 'PalatinoLT-Roman', serif;
+  color: #f3f3f3;
+}
+
+.navbar {
+  @media screen and (max-width: 768px) {
+    justify-content: flex-end;
+  }
+
+  .navbar-brand {
+    font-size: 1.125rem;
+    font-family: 'PalatinoLT-Roman', serif;
+    color: white;
+  }
+
+  .icon-bar {
+    display: block;
+    width: 22px; 
+    height: 2px;
+    background-color: $main-gold;
+    transition: all 0.2s;
+    margin-top: 4px
+  }
+
+  .navbar-toggler {
+    border: none;
+    background: transparent !important;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &.collapsed {
+      .top-bar {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+      }
+      
+      .middle-bar {
+        opacity: 0;
+      }
+
+      .bottom-bar {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+      }
+    }
+
+    .top-bar {
+      transform: rotate(0);
+    }
+    
+    .middle-bar {
+      opacity: 1;
+    }
+
+    .bottom-bar {
+      transform: rotate(0);
+    }
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+
+    .navbar-nav {
+      @media screen and (max-width: 991px) {
+          height: 100vh;
+          align-items: center;
+
+        .nav-link {
+          font-size: 1.9rem;
+        }
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      font-size: 1.2vw;
+      font-family: PalatinoLT-Roman, serif;
+      color: $main-gold;
+
+      &:hover {
+        color: lighten($main-gold, 10%);
+      }
+
+      &.active {
+        color: lighten($main-gold, 18%);
+      }
+    }
+  }
+}

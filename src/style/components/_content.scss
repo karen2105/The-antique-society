@@ -1,0 +1,134 @@
+.antiques-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+
+  .content-section-wrapper {
+    padding: 10% 20% 1%;
+    background: #F3F3F3;
+
+    @media screen and (max-width: 768px) {
+      padding: 10%;
+    }
+  }
+
+  .content-section-events-wrapper {
+    padding: 4% 8%;
+    background: linear-gradient(180deg, rgba(243,243,243,1) 0%, rgba(255,255,255,1) 100%);
+
+    h5 + hr {
+      margin: 2% auto;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 8% auto 1%;
+    max-width: 100%;
+  }
+
+  hr {
+    margin: 4% auto;
+  }
+
+  .content-section-title {
+    font-family: 'PalatinoLT-Roman', serif;
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 38px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.6rem;
+      line-height: 25px;
+    }
+  }
+
+  .content-section-description {
+    color: #666666;
+    font-size: 1.35em;
+    font-family: 'PalatinoLT-Roman', serif;
+
+    @media screen and (max-width: 768px) {
+      font-family: 'PalatinoLT-Light', serif;
+      font-size: 1.1em;
+    }
+  }
+
+  .furniture-detail-wrapper {
+    .year {
+      color: $main-gold;
+    }
+  }
+}
+
+.antiques-top-events-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  margin-top: 50px;
+
+  .event-container {
+    width: 30%;
+    text-align: left;
+
+    @media screen and (max-width: 768px) {
+      flex: 1 0 auto;
+      text-align: center;
+      padding: 0 10%;
+      margin-bottom: 10%;
+    }
+    
+    .date {
+      font-family: 'PalatinoLT-Light', serif;
+      font-size: 34px;
+
+      .year {
+        color: #cecece;
+      }
+
+      .day, .month {
+        color: $main-gold;
+        text-transform: uppercase;
+      }
+    }
+
+    .event-name {
+      font-family: 'PalatinoLT-Light', serif;
+      font-size: 30px;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
+
+    .event-description {
+      margin: 20px 0;
+      font-family: 'AvenirLTStd-Book';
+      font-size: 0.9rem;
+      color: #666666;
+    }
+
+    .button-information {
+        background: transparent;
+        color: $main-gold;
+        border: 1px solid $main-gold;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        font-family: 'AvenirLTStd-Medium';
+        font-size: 0.8rem;
+        cursor: pointer;
+        outline: none;
+        white-space: pre;
+
+        &:hover {
+          background: $main-gold;
+          color: white;
+          transition: all ease 200ms;
+        }
+
+        &:focus {
+          background: rgba($main-gold, 0.2);
+          color: $main-gold;
+          transition: all ease 200ms;
+        }
+    }
+  }
+}
